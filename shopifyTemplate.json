@@ -23,12 +23,12 @@
             "y": 62.605232
           },
           "config": "$.id",
-          "nextBlock": "retrieveOrder"
+          "nextBlock": "retrieveProduct"
         },
-        "retrieveOrder": {
+        "retrieveProduct": {
           "type": "MODULE",
-          "id": "retrieveOrder",
-          "name": "Retrieve Order",
+          "id": "retrieveProduct",
+          "name": "Retrieve Product",
           "description": "",
           "location": {
             "x": 347.2112,
