@@ -29,9 +29,7 @@ const shopify = shopifyApp({
   webhooks: SafeDigit.getWebhooks(clientId, webhooks),
   hooks: {
     afterAuth: async ({ session }) => {
-      console.info("Started afterAuth hook");
       shopify.registerWebhooks({ session });
-      console.info("Creating tenant for shop", session.shop);
       await safeDigit.createTenant(
         "clientId",
         session.shop,
